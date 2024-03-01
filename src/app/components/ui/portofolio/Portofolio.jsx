@@ -37,7 +37,7 @@ const Portofolio = () => {
   return (
     <div className="bg-black">
       <Container>
-        <Row className="d-flex align-items-center" style={{ padding: "100px 100px" }}>
+        <Row className="d-flex align-items-center py-5">
           <Col>
             <div className="d-flex gap-5 justify-content-center">
               <h6 className="text-white mt-2">Our Portofolio</h6>

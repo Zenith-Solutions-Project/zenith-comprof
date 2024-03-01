@@ -16,7 +16,7 @@ const Hero = () => {
   };
   return (
     <Container>
-      <Row className="d-flex align-items-center vh-100">
+      <Row className="d-flex align-items-center py-5 my-5">
         <Col xs={12} lg={6} md={6}>
           <div>
             <h1 className="text-dark display-1 fw-bold">
@@ -32,7 +32,7 @@ const Hero = () => {
             </ButtonCustom>
           </div>
         </Col>
-        <Col>
+        <Col className="mt-4">
           <Image src={HeroImage} fluid />
         </Col>
       </Row>

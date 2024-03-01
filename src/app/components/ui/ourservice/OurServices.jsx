@@ -6,9 +6,9 @@ const OurServices = () => {
     <div className="bg-black">
       {" "}
       <Container>
-        <Row className="bg-black d-flex align-items-center vh-100">
+        <Row className="bg-black d-flex align-items-center py-5">
           <Col lg={2}>
-            <h3 className="text-white">Our Services</h3>
+            <h3 className="text-white text-center mb-3">Our Services</h3>
           </Col>
           <Col>
             {" "}

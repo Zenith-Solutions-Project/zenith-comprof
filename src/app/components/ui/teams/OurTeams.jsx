@@ -6,7 +6,7 @@ import "./teams.css";
 const OurTeams = () => {
   const teams = [
     {
-      name: "Gilang",
+      name: "Gilang Aditia",
       role1: "UI/UX Designer |",
       role2: " Frontend Developer",
       image: Teams1,
@@ -21,21 +21,21 @@ const OurTeams = () => {
       linkedin: "https://linkedin.com/in/example1",
     },
     {
-      name: "Bang Risky",
+      name: "Rizqi Rahmadianto",
       role1: "Frontend Developer",
       image: Teams1,
       github: "https://github.com/example1",
       linkedin: "https://linkedin.com/in/example1",
     },
     {
-      name: "Adib Alfaini",
+      name: "Adib Alfaini Afifi",
       role1: "Backend Developer",
       image: Teams1,
       github: "https://github.com/example1",
       linkedin: "https://linkedin.com/in/example1",
     },
     {
-      name: "Ana Marimas",
+      name: "Ana Marisa",
       role1: "Back End Developer",
       image: Teams1,
       github: "https://github.com/example1",
@@ -50,12 +50,12 @@ const OurTeams = () => {
 
   return (
     <Container>
-      <Row className="d-flex align-items-center vh-100">
+      <Row className="d-flex align-items-center my-2">
         <Col lg={3}>
           <h3>Our Teams</h3>
         </Col>
         <Col>
-          <div className="d-flex flex-wrap gap-4 mt-5">
+          <div className="d-flex flex-wrap gap-4 mt-1">
             {teams.map((teamMember, index) => (
               <Card key={index} className="border-0 d-flex flex-column align-items-center">
                 <Image src={teamMember.image} style={imageStyle} className="mt-3 img-style" />
