@@ -4,6 +4,7 @@ import Home from "../app/pages/Home";
 import OurTeams from "../app/components/ui/teams/OurTeams";
 import OurServices from "../app/components/ui/ourservice/OurServices";
 import Portofolio from "../app/components/ui/portofolio/Portofolio";
+import SliderPorto from "../app/pages/SliderPorto";
 const routes = [
   {
     path: "/",
@@ -45,7 +46,7 @@ const routes = [
     children: [
       {
         path: "",
-        element: <Portofolio />,
+        element: <SliderPorto />,
       },
     ],
   },
