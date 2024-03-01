@@ -26,7 +26,7 @@ const OurTeams = () => {
       linkedin: "linkedin.com/in/singgihseptian",
     },
     {
-      name: "Rizqi Rahmadianto",
+      name: "Rizqi Ramadhani",
       role1: "Frontend Developer",
       image: Teams3,
       github: "https://github.com/ramarizqiunstopable",
