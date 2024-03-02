@@ -64,8 +64,7 @@ const OurTeams = () => {
             {teams.map((teamMember, index) => (
               <Card
                 key={index}
-                className="border-0 d-flex flex-column align-items-center"
-              >
+                className="border-0 d-flex flex-column align-items-center">
                 <Image
                   src={teamMember.image}
                   style={imageStyle}
@@ -83,16 +82,14 @@ const OurTeams = () => {
                     <a
                       href={teamMember.github}
                       target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaGithubSquare size={30} />
+                      rel="noopener noreferrer">
+                      <FaGithubSquare size={30} color="black" />
                     </a>
                     <a
                       href={teamMember.linkedin}
                       target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaLinkedin size={30} />
+                      rel="noopener noreferrer">
+                      <FaLinkedin size={30} color="black" />
                     </a>
                   </Card.Text>
                 </Card.Body>

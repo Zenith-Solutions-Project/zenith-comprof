@@ -1,6 +1,5 @@
-import React from "react";
 import { Image } from "react-bootstrap";
-import { FaGithub } from "react-icons/fa";
+
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";

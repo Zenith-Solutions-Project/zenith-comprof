@@ -30,10 +30,9 @@ function NavigationBar() {
         <Link
           to="/"
           className="navbar-brand text-uppercase fw-bold fs-1 d-flex gap-3 align-items-center"
-          style={{ letterSpacing: "2px" }}
-        >
-          <Image src={Zenith} style={imageStyle} fluid />
-          <NavbarBrand>ZENITH</NavbarBrand>
+          style={{ letterSpacing: "2px" }}>
+          {/* <Image src={Zenith} style={imageStyle} fluid /> */}
+          <NavbarBrand className="fs-1">ZENITH</NavbarBrand>
         </Link>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -48,8 +47,7 @@ function NavigationBar() {
           </Nav>
           <ButtonCustom
             className="btn-outline-dark rounded-3"
-            onClick={handleClick}
-          >
+            onClick={handleClick}>
             Contact Us
           </ButtonCustom>
         </Navbar.Collapse>
