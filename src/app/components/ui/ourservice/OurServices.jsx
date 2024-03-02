@@ -8,7 +8,7 @@ const OurServices = () => {
       <Container>
         <Row className="bg-black d-flex align-items-center py-5">
           <Col lg={2}>
-            <h3 className="text-white text-center mb-3">Our Services</h3>
+            <h3 className="text-white mb-3">We Can Offer Many Solutions, Try Our Services</h3>
           </Col>
           <Col>
             {" "}

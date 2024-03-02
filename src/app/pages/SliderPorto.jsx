@@ -77,8 +77,8 @@ const SliderPorto = () => {
         <Row>
             <Col>
             <div>
-                <h1 className="text-dark">Portolio</h1>
-                <p className="text-dark">Our Portfolio We envision a world where every idea, product, or service is brought to life through exceptional design.</p>
+                <h3 className="text-dark">Innovatice App Project</h3>
+                <h5 className="text-secondary">Check Out Our Latest Creation!</h5>
                 </div>
                 </Col>
         </Row>

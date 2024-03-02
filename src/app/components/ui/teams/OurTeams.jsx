@@ -41,7 +41,7 @@ const OurTeams = () => {
     },
     {
       name: "Ana Marisa",
-      role1: "Back End Developer",
+      role1: "Backend Developer",
       image: Teams5,
       github: "https://github.com/AnaMarisa",
       linkedin: "https://www.linkedin.com/in/ana-m-039135131/",
@@ -55,9 +55,10 @@ const OurTeams = () => {
 
   return (
     <Container>
-      <Row className="d-flex align-items-center my-2">
+      <Row className="d-flex align-items-center my-5">
         <Col lg={3}>
-          <h3>Our Teams</h3>
+          <h3>Our Expert Teams</h3>
+          <h5 className="text-secondary">Top-notch Web Developers!</h5>
         </Col>
         <Col>
           <div className="d-flex flex-wrap gap-4 mt-1">
