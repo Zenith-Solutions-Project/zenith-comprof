@@ -18,7 +18,7 @@ const Footer = () => {
                   style={{ width: "50px" }}
                   className="py-3"
                 />
-                <p className="fs-1 mt-3"> Zenit Solutions</p>
+                <p className="fs-1 mt-3"> Zenith Solutions</p>
               </div>
 
               <p>
@@ -35,13 +35,13 @@ const Footer = () => {
               <div className="className">
                 <div className="d-flex gap-2">
                   <a href="" className="youtube">
-                    <FaYoutube size={30} color="red" />
+                    <FaYoutube size={30} />
                   </a>
                   <a href="" className="instagram ">
-                    <FaInstagram size={30} color="red" />
+                    <FaInstagram size={30} />
                   </a>
                   <a href="" className="instagram">
-                    <FaTiktok size={30} color="red" />
+                    <FaTiktok size={30} />
                   </a>
                 </div>
                 <p>

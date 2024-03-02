@@ -8,7 +8,7 @@ const Portofolio = ({ title, description, image }) => {
 
   return (
     <Container>
-      <Row className="d-flex gap-2 align-items-center py-5">
+      <Row className="d-flex gap-2 align-items-center pt-3 pb-5">
         {/* <Col>
             <div className="d-flex gap-5 justify-content-center">
               <h6 className="text-white mt-2">Our Portofolio</h6>

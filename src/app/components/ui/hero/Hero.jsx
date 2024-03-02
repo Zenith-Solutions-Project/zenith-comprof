@@ -19,16 +19,14 @@ const Hero = () => {
       <Row className="d-flex align-items-center py-5 my-5">
         <Col xs={12} lg={6} md={6}>
           <div>
-            <h1 className="text-dark display-1 fw-bold">
-              Where Design Meets Innovation!
-            </h1>
-            <p>
-              Whether you're a startup looking to establish your brand identity
-              or an established business aiming to refresh your image, we've got
-              the creative firepower to make it happen. LET’S TALK
+            <h2 className="text-dark display-4 fw-bold">
+              Your strategic partner for innovation and efficiency
+            </h2>
+            <p className="text-secondary fs-5">
+              Harmonizing your digital journey with tailored apps and websites requires innovation, precision, and perfection.
             </p>
             <ButtonCustom className="btn-outline-dark" onClick={handleClick}>
-              Lets Talk!
+              Lets Make a Deal!
             </ButtonCustom>
           </div>
         </Col>
