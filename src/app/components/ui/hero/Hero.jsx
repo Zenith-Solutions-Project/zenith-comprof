@@ -23,7 +23,8 @@ const Hero = () => {
               Your strategic partner for innovation and efficiency
             </h2>
             <p className="text-secondary fs-5">
-              Harmonizing your digital journey with tailored apps and websites requires innovation, precision, and perfection.
+              Harmonizing your digital journey with tailored apps and websites
+              requires innovation, precision, and perfection.
             </p>
             <ButtonCustom className="btn-outline-dark" onClick={handleClick}>
               Lets Make a Deal!
