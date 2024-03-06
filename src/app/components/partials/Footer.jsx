@@ -1,82 +1,56 @@
-import { Image } from "react-bootstrap";
-import { FaYoutube, FaInstagram, FaTiktok } from "react-icons/fa";
+import { Image, Container, Row, Col } from "react-bootstrap";
+
 import logoFooter from "../../../assets/logo/ZS2.png";
 import "./footer.css";
-
+import { FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 const Footer = () => {
-  const IconCard = ({ icon: Icon, link, platform }) => {
-    return (
-      <a href={link} className={`icon-card ${platform}`}>
-        <div className="icon">
-          <Icon size={20} />
-        </div>
-      </a>
-    );
-  };
+  const footerIcons = [
+    {
+      path: "/",
+      icons: <FaInstagram />,
+    },
+    {
+      path: "/",
+      icons: <FaTiktok />,
+    },
+    {
+      path: "/",
+      icons: <FaLinkedin />,
+    },
+  ];
   return (
     <>
-      <footer className="bg-black text-center text-lg-start justify-content-center d-flex">
-        <div className="container-fluid p-4">
-          <div className="row">
-            <div className="row">
-              <div className="col-lg-6">
-                <div className="d-flex align-items-center gap-4 text-white">
-                  <Image
-                    src={logoFooter}
-                    style={{ width: "50px" }}
-                    className="py-3"
-                  />
-                  <p className="fs-1 mt-3 text-white"> Zenith Solutions</p>
-                </div>
-                <p className="text-white">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Porro, debitis sit hic esse nulla ipsum deleniti cum,
-                  veritatis inventore voluptate molestias ex magnam, deserunt
-                  earum aperiam omnis? Earum tempore laboriosam distinctio ut
-                  aspernatur, veritatis cupiditate vitae quae autem sapiente
-                  reprehenderit culpa assumenda ab? Laudantium tenetur vitae,
-                  debitis culpa laborum eveniet.
-                </p>
+      <footer className="bg-black">
+        <Container>
+          <Row>
+            <Col lg={4} xs={12} className="mb-3">
+              <div className="text-white text-center text-lg-start">
+                <Image src={logoFooter} style={{ width: "50px" }} />
+                <h1 className="">Zenith Solutions</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fuga expedita vitae magnam voluptatibus. Vel.</p>
               </div>
-
-              <div className="col-lg-6 mt-4">
-                <div className="container">
-                  <div className="row">
-                    <div className="col">
-                      <div className="icon-container">
-                        <IconCard
-                          icon={FaYoutube}
-                          link="#"
-                          platform="youtube"
-                        />
-                        <IconCard
-                          icon={FaInstagram}
-                          link="#"
-                          platform="instagram"
-                        />
-                        <IconCard icon={FaTiktok} link="#" platform="tiktok" />
-                      </div>
-                    </div>
+            </Col>
+            <Col lg={4} xs={12} className="mb-4">
+              <h1 className="text-white text-center text-lg-start">Social Media</h1>
+              <div className="d-flex justify-content-center justify-content-lg-start gap-2">
+                {footerIcons.map((icon, index) => (
+                  <div key={index}>
+                    <a href={icon.path} target="_blank">
+                      <span className="text-white fs-1">{icon.icons}</span>
+                    </a>
                   </div>
-                </div>
-                <div>
-                  <p
-                    className="text-white"
-                    style={{ alignSelf: "center", marginTop: "27px" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores accusamus voluptate eligendi, nihil iure autem
-                    officia animi vel. Facere magnam ullam rem cupiditate enim?
-                    Ipsum architecto esse, nobis deleniti molestias animi
-                    voluptatem nihil enim aliquam tempore labore magni, numquam
-                  </p>
-                </div>
+                ))}
               </div>
-            </div>
-            <div className="row justify-content-center align-items-center text-white">
-              @ 2024 Copyright
-            </div>
-          </div>
-        </div>
+            </Col>
+
+            <Col>
+              <div className="text-white text-center text-lg-start">
+                <h1 className="text-center text-lg-start">Alamat</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro sunt harum.</p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </footer>
     </>
   );
