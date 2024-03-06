@@ -22,7 +22,7 @@ const Footer = () => {
     <>
       <footer className="bg-black">
         <Container>
-          <Row>
+          <Row className="p-3">
             <Col lg={4} xs={12} className="mb-3">
               <div className="text-white text-center text-lg-start">
                 <Image src={logoFooter} style={{ width: "50px" }} />
