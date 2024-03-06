@@ -3,7 +3,7 @@ import ButtonCustom from "../../elements/Button";
 
 const Portofolio = ({ title, description, image }) => {
   const handleClick = () => {
-    alert("WKWKWKWKWKWKWK BERAK");
+    alert("Explore Our Portfolio");
   };
 
   return (

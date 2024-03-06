@@ -2,7 +2,7 @@ import { Image, Container, Row, Col } from "react-bootstrap";
 
 import logoFooter from "../../../assets/logo/ZS2.png";
 import "./footer.css";
-import { FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTiktok, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   const footerIcons = [
     {
@@ -17,26 +17,31 @@ const Footer = () => {
       path: "/",
       icons: <FaLinkedin />,
     },
+    {
+      path: "/",
+      icons: <FaWhatsapp />,
+    },
   ];
   return (
     <>
-      <footer className="bg-black">
+      <footer className="bg-black rounded-top-4">
         <Container>
           <Row className="p-3">
             <Col lg={4} xs={12} className="mb-3">
-              <div className="text-white text-center text-lg-start">
-                <Image src={logoFooter} style={{ width: "50px" }} />
-                <h1 className="">Zenith Solutions</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fuga expedita vitae magnam voluptatibus. Vel.</p>
-              </div>
+            <div className="text-white d-flex justify-content-center ">
+    <div className="text-center">
+        <Image src={logoFooter} style={{ width: "80px" }} />
+        <h4 className="mt-2">Zenith Solutions</h4>
+    </div>
+</div>
             </Col>
             <Col lg={4} xs={12} className="mb-4">
-              <h1 className="text-white text-center text-lg-start">Social Media</h1>
+              <h4 className="text-white text-center text-lg-start">Social Media</h4>
               <div className="d-flex justify-content-center justify-content-lg-start gap-2">
                 {footerIcons.map((icon, index) => (
                   <div key={index}>
                     <a href={icon.path} target="_blank">
-                      <span className="text-white fs-1">{icon.icons}</span>
+                      <span className="text-white fs-3 ">{icon.icons}</span>
                     </a>
                   </div>
                 ))}
@@ -45,8 +50,8 @@ const Footer = () => {
 
             <Col>
               <div className="text-white text-center text-lg-start">
-                <h1 className="text-center text-lg-start">Alamat</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro sunt harum.</p>
+                <h4 className="text-center text-lg-start">Alamat</h4>
+                <p>KO Arzelia Garden C4/7,Daru, Jambe, Kab. Tangerang Banten</p>
               </div>
             </Col>
           </Row>

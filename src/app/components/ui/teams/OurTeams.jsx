@@ -12,8 +12,7 @@ const OurTeams = () => {
   const teams = [
     {
       name: "Gilang Aditia",
-      role1: "UI/UX Designer |",
-      role2: " Frontend Developer",
+      role1: "UI/UX | Frontend Developer",
       image: Teams1,
       github: " https://github.com/gilang-aditia",
       linkedin: "https://www.linkedin.com/in/gilang-aditia-b79461231/",
@@ -55,12 +54,11 @@ const OurTeams = () => {
 
   return (
     <Container>
-      <Row className="d-flex align-items-center my-5">
-        <Col lg={3}>
+      <Row  className="mb-4" >
+        <Col >
           <h3>Our Expert Teams</h3>
           <h5 className="text-secondary">Top-notch Web Developers!</h5>
-        </Col>
-        <Col>
+      
           <div className="d-flex flex-wrap gap-4 mt-1">
             {teams.map((teamMember, index) => (
               <Card
@@ -84,13 +82,13 @@ const OurTeams = () => {
                       href={teamMember.github}
                       target="_blank"
                       rel="noopener noreferrer">
-                      <FaGithubSquare size={30} color="black" />
+                      <FaGithubSquare className="rounded-5" size={30} color="black" />
                     </a>
                     <a
                       href={teamMember.linkedin}
                       target="_blank"
                       rel="noopener noreferrer">
-                      <FaLinkedin size={30} color="black" />
+                      <FaLinkedin className="rounded-5" size={30} color="black" />
                     </a>
                   </Card.Text>
                 </Card.Body>

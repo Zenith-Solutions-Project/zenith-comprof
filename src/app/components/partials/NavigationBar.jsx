@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import ButtonCustom from "../elements/Button";
 import Image from "react-bootstrap/Image";
+import logoFooter from "../../../assets/logo/ZS2.png";
 
 import Zenith from "../../../assets/logo/zs.png";
 import { NavbarBrand } from "react-bootstrap";
@@ -17,7 +18,7 @@ function NavigationBar() {
     { to: "/portofolio", text: "Portofolio" },
   ];
   const handleClick = () => {
-    alert("awowkwokwowko tolol");
+    alert("Welcome To Zenith");
   };
   const imageStyle = {
     width: "40px",
@@ -25,14 +26,14 @@ function NavigationBar() {
     display: "inline-block",
   };
   return (
-    <Navbar expand="lg" className="bg-white border-bottom shadow-sm sticky-top">
+    <Navbar expand="lg" className="bg-white border-bottom shadow-sm sticky-top rounded-bottom-4">
       <Container>
         <Link
           to="/"
           className="navbar-brand text-uppercase fw-bold fs-1 d-flex gap-3 align-items-center"
           style={{ letterSpacing: "2px" }}>
           {/* <Image src={Zenith} style={imageStyle} fluid /> */}
-          <NavbarBrand className="fs-1">ZENITH</NavbarBrand>
+          <NavbarBrand className="fs-1"> <Image src={logoFooter} style={{ width: "65px" }} /> ZENITH</NavbarBrand>
         </Link>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
