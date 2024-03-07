@@ -59,42 +59,42 @@ const OurTeams = () => {
           <h3>Our Expert Teams</h3>
           <h5 className="text-secondary">Top-notch Web Developers!</h5>
       
-          <div className="d-flex flex-wrap gap-4 mt-1">
-            {teams.map((teamMember, index) => (
-              <Card
-                key={index}
-                className="border-0 d-flex flex-column align-items-center">
-                <Image
-                  src={teamMember.image}
-                  style={imageStyle}
-                  className="mt-3 img-style "
-                />
-                <Card.Body className="text-center align-items-center">
-                  <Card.Title>{teamMember.name}</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted ">
-                    {teamMember.role1}
-                  </Card.Subtitle>
-                  <Card.Subtitle className="mb-2 text-muted ">
-                    {teamMember.role2}
-                  </Card.Subtitle>
-                  <Card.Text>
-                    <a
-                      href={teamMember.github}
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      <FaGithubSquare className="rounded-5" size={30} color="black" />
-                    </a>
-                    <a
-                      href={teamMember.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      <FaLinkedin className="rounded-5" size={30} color="black" />
-                    </a>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            ))}
-          </div>
+          <div className="d-flex flex-wrap mt-1">
+  {teams.map((teamMember, index) => (
+    <div key={index} className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+      <Card className="border-0">
+        <Image
+          src={teamMember.image}
+          style={imageStyle}
+          className="mt-3 img-style text-center"
+        />
+        <Card.Body className="text-center align-items-center">
+          <Card.Title>{teamMember.name}</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted ">
+            {teamMember.role1}
+          </Card.Subtitle>
+          <Card.Subtitle className="mb-2 text-muted ">
+            {teamMember.role2}
+          </Card.Subtitle>
+          <Card.Text>
+            <a
+              href={teamMember.github}
+              target="_blank"
+              rel="noopener noreferrer">
+              <FaGithubSquare className="rounded-5" size={30} color="black" />
+            </a>
+            <a
+              href={teamMember.linkedin}
+              target="_blank"
+              rel="noopener noreferrer">
+              <FaLinkedin className="rounded-5" size={30} color="black" />
+            </a>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </div>
+  ))}
+</div>
         </Col>
       </Row>
     </Container>

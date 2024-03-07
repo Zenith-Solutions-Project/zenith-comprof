@@ -5,13 +5,13 @@ import ButtonCustom from "../../elements/Button";
 const Hero = () => {
   const handleClick = () => {
     // Menggunakan prompt untuk mendapatkan respons dari pengguna
-    const userConfirmed = confirm("Apakah Anda Bisex?");
+    const userConfirmed = confirm("Download Brosur Kami?");
 
     // Menampilkan respons pengguna menggunakan alert
     if (userConfirmed !== null) {
-      alert("YA SAYA BISEX");
+      alert("Ok");
     } else {
-      alert("YA SAYA BISEX");
+      alert("Tidak Terima Kasih");
     }
   };
   return (

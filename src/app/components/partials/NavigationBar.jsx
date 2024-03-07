@@ -8,7 +8,7 @@ import ButtonCustom from "../elements/Button";
 import Image from "react-bootstrap/Image";
 import logoFooter from "../../../assets/logo/ZS2.png";
 
-import Zenith from "../../../assets/logo/zs.png";
+import Zenith from "../../../assets/logo/zsnew.png";
 import { NavbarBrand } from "react-bootstrap";
 function NavigationBar() {
   const navLinks = [
@@ -33,7 +33,7 @@ function NavigationBar() {
           className="navbar-brand text-uppercase fw-bold fs-1 d-flex gap-3 align-items-center"
           style={{ letterSpacing: "2px" }}>
           {/* <Image src={Zenith} style={imageStyle} fluid /> */}
-          <NavbarBrand className="fs-1"> <Image src={logoFooter} style={{ width: "65px" }} /> ZENITH</NavbarBrand>
+          <NavbarBrand className="fs-3"> <Image src={Zenith} style={{  width: "65px" }} /> Zenith </NavbarBrand>
         </Link>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -1,4 +1,5 @@
 import { Image, Container, Row, Col } from "react-bootstrap";
+import Zenith from "../../../assets/logo/zsnew.png";
 
 import logoFooter from "../../../assets/logo/ZS2.png";
 import "./footer.css";
@@ -30,7 +31,7 @@ const Footer = () => {
             <Col lg={4} xs={12} className="mb-3">
             <div className="text-white d-flex justify-content-center ">
     <div className="text-center">
-        <Image src={logoFooter} style={{ width: "80px" }} />
+        <Image src={Zenith} style={{ width: "80px" }} />
         <h4 className="mt-2">Zenith Solutions</h4>
     </div>
 </div>
