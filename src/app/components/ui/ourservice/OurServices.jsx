@@ -34,9 +34,10 @@ const OurServices = () => {
       <Container>
         <Row className=" d-flex align-items-center py-5">
           <Col lg={12}>
-            <h3 className="text-center mb-5 text-dark">
-              A complete package of digital services
+            <h3 className="text-center text-dark">
+              Our Services
             </h3>
+            <h5 className="text-secondary text-center">A complete package of digital services</h5>
           </Col>
           {cardData.map((card) => (
             <Col lg={4} key={card.id}>

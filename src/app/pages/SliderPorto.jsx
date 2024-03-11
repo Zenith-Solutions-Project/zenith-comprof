@@ -77,8 +77,8 @@ const SliderPorto = () => {
         <Row>
             <Col>
             <div>
-                <h3 className="text-dark">Innovatice App Project</h3>
-                <h5 className="text-secondary">Check Out Our Latest Creation!</h5>
+                <h3 className="text-dark text-center">Innovatice App Project</h3>
+                <h5 className="text-secondary text-center">Check Out Our Latest Creation!</h5>
                 </div>
                 </Col>
         </Row>
