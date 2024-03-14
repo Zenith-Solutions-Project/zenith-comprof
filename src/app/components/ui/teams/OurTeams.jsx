@@ -57,8 +57,10 @@ const OurTeams = () => {
     <Container>
       <Row className="mb-4">
         <Col>
-          <h3>Our Expert Teams</h3>
-          <h5 className="text-secondary">Top-notch Web Developers!</h5>
+          <h3 className="text-center text-dark">Our Expert Teams</h3>
+          <h5 className="text-secondary text-center">
+            Top-notch Web Developers!
+          </h5>
           <div className="d-flex flex-wrap mt-1">
             {teams.map((teamMember, index) => (
               <div
