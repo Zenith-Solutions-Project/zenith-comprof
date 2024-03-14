@@ -9,9 +9,13 @@ import { SiGooglemarketingplatform } from "react-icons/si";
 import "./services.css";
 const OurServices = () => {
   const cardData = [
-    { id: 1, title: "Development", icons: <BsFileEarmarkCode size={50} /> },
-    { id: 2, title: "UI|UX Design", icons: <IoLogoDesignernews size={50} /> },
-    { id: 3, title: "It Support", icons: <FaServer size={50} /> },
+    {
+      id: 1,
+      title: "Software Development",
+      icons: <BsFileEarmarkCode size={50} />,
+    },
+    { id: 2, title: "UI/UX Design", icons: <IoLogoDesignernews size={50} /> },
+    { id: 3, title: "IT Support", icons: <FaServer size={50} /> },
     {
       id: 4,
       title: "Graphic Design",
@@ -23,7 +27,7 @@ const OurServices = () => {
       icons: <TbSeo size={50} />,
     },
     {
-      id: 5,
+      id: 6,
       title: "Digital Marketing",
       icons: <SiGooglemarketingplatform size={50} />,
     },
@@ -32,12 +36,12 @@ const OurServices = () => {
   return (
     <div className="">
       <Container>
-        <Row className=" d-flex align-items-center py-5">
+        <Row className=" d-flex align-items-center pt-1 pb-2">
           <Col lg={12}>
-            <h3 className="text-center text-dark">
-              Our Services
-            </h3>
-            <h5 className="text-secondary text-center">A complete package of digital services</h5>
+            <h3 className="text-center text-dark">Our Services</h3>
+            <h5 className="text-secondary text-center">
+              A complete package of digital services
+            </h5>
           </Col>
           {cardData.map((card) => (
             <Col lg={4} key={card.id}>

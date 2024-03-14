@@ -51,21 +51,20 @@ const OurTeams = () => {
     filter: "grayscale(100%)",
     height: "200px",
     width: "150px",
-    margin: "auto",
   };
 
   return (
     <Container>
       <Row className="mb-4">
         <Col>
-          <h3 className="text-center">Our Expert Teams</h3>
-          <h5 className="text-secondary text-center">Top-notch Web Developers!</h5>
-
-          {teams.map((teamMember, index) => (
-            <React.Fragment key={index}>
-              {index % 2 === 0 && index > 0 && <div className="w-100"></div>}
-              <Col xs={12} md={6} className="mb-3">
-                <Card className="border-0">
+          <h3>Our Expert Teams</h3>
+          <h5 className="text-secondary">Top-notch Web Developers!</h5>
+          <div className="d-flex flex-wrap mt-1">
+            {teams.map((teamMember, index) => (
+              <div
+                key={index}
+                className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <Card className="border-0 align-items-center">
                   <Image
                     src={teamMember.image}
                     style={imageStyle}
@@ -83,8 +82,7 @@ const OurTeams = () => {
                       <a
                         href={teamMember.github}
                         target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                        rel="noopener noreferrer">
                         <FaGithubSquare
                           className="rounded-5"
                           size={30}
@@ -94,8 +92,7 @@ const OurTeams = () => {
                       <a
                         href={teamMember.linkedin}
                         target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                        rel="noopener noreferrer">
                         <FaLinkedin
                           className="rounded-5"
                           size={30}
@@ -105,9 +102,9 @@ const OurTeams = () => {
                     </Card.Text>
                   </Card.Body>
                 </Card>
-              </Col>
-            </React.Fragment>
-          ))}
+              </div>
+            ))}
+          </div>
         </Col>
       </Row>
     </Container>
