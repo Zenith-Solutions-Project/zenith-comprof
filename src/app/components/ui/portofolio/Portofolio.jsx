@@ -12,7 +12,7 @@ const Portofolio = ({ title, description, image }) => {
         {/* <Col>
             <div className="d-flex gap-5 justify-content-center">
               <h6 className="text-white mt-2">Our Portofolio</h6>
-              <p className="text-white fw-bold fs-5 w-75">Our Portfolio We envision a world where every idea, product, or service is brought to life through exceptional design.</p>
+              <p className="text-white fw-bold fs-5 w-75">Our Portfolio We envisiinon a world where every idea, product, or service is brought to life through exceptional design.</p>
             </div>
           </Col> */}
         <div className="ms-2">
