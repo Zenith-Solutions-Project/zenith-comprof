@@ -50,7 +50,7 @@ const OurTeams = () => {
   const imageStyle = {
     filter: "grayscale(100%)",
     height: "200px",
-    width: "150px",
+    width: "175px",
   };
 
   return (
