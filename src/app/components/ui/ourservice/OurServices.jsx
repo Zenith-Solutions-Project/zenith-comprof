@@ -14,7 +14,11 @@ const OurServices = () => {
       title: "Software Development",
       icons: <BsFileEarmarkCode size={50} />,
     },
-    { id: 2, title: "UI/UX Design", icons: <IoLogoDesignernews size={50} /> },
+    {
+      id: 2,
+      title: "UI/UX Design",
+      icons: <IoLogoDesignernews size={50} />,
+    },
     { id: 3, title: "IT Support", icons: <FaServer size={50} /> },
     {
       id: 4,
