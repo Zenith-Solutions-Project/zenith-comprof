@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Container, Row, Col } from 'react-bootstrap';
 import Portofolio from '../components/ui/portofolio/Portofolio';
 import Projects from '../../assets/projects/projects.jpg';
+import Stay from '../../assets/projects/p1.png';
 
 const SliderPorto = () => {
   const portfolioItems = [
@@ -15,8 +16,8 @@ const SliderPorto = () => {
     },
     {
       title: "Landing Pages",
-      description: "Some description for the second item.",
-      image: Projects,
+      description: "staycation website with sticky navbar feature, responsive for all devices and testimonial dropdowns.",
+      image: Stay,
     },
     {
       title: "Landing Pages",
