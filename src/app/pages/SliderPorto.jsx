@@ -13,26 +13,31 @@ const SliderPorto = () => {
       title: "Landing Pages",
       description: "Some description for the first item.",
       image: Projects,
+      demo: "buruh",
     },
     {
-      title: "Landing Pages",
+      title: "Skuy.com",
       description: "staycation website with sticky navbar feature, responsive for all devices and testimonial dropdowns.",
       image: Stay,
+      demo: "https://skuy-phi.vercel.app/",
     },
     {
       title: "Landing Pages",
       description: "Some description for the third item.",
       image: Projects,
+      demo: "buruh"
     },
     {
       title: "Landing Pages",
       description: "Some description for the fourth item.",
       image: Projects,
+      demo: "buruh"
     },
     {
       title: "Landing Pages",
       description: "Some description for the fifth item.",
       image: Projects,
+      demo: "buruh"
     },
     // Add more portfolio items as needed
   ];
@@ -89,7 +94,7 @@ const SliderPorto = () => {
             <Slider {...settings}>
               {portfolioItems.map((item, index) => (
                 <div key={index}>
-                  <Portofolio title={item.title} description={item.description} image={item.image} />
+                  <Portofolio title={item.title} description={item.description} image={item.image} demo={item.demo} />
                 </div>
               ))}
             </Slider>

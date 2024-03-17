@@ -56,6 +56,10 @@ const Footer = () => {
               </div>
             </Col>
           </Row>
+          <Row>
+          <hr className="" style={{ backgroundColor: 'white', height: '1px', border: 'none' }} />
+            <p className="text-center text-white">Copyright © 2024 • Zenith • All rights reserved</p>
+          </Row>
         </Container>
       </footer>
     </>

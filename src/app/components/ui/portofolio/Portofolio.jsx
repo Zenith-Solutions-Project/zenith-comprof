@@ -1,7 +1,7 @@
 import { Col, Container, Row, Card } from "react-bootstrap";
 import ButtonCustom from "../../elements/Button";
 
-const Portofolio = ({ title, description, image }) => {
+const Portofolio = ({ title, description, image,demo }) => {
   const handleClick = () => {
     alert("Explore Our Portfolio");
   };
@@ -25,7 +25,7 @@ const Portofolio = ({ title, description, image }) => {
                 <Card.Text className="text-dark">{description}</Card.Text>
               </div>
               <ButtonCustom className="btn-outline-dark" onClick={handleClick}>
-                Launch Site
+                <a href={demo} target="_blank" className="text-decoration-none text-black">Launch Site</a>                
               </ButtonCustom>
             </Card.Body>
           </Card>
