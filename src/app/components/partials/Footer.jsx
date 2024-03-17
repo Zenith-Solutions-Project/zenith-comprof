@@ -1,13 +1,12 @@
 import { Image, Container, Row, Col } from "react-bootstrap";
 import Zenith from "../../../assets/logo/zsnew.png";
-
 import logoFooter from "../../../assets/logo/ZS2.png";
 import "./footer.css";
 import { FaInstagram, FaLinkedin, FaTiktok, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   const footerIcons = [
     {
-      path: "/",
+      path: "https://www.instagram.com/zelution.inc/",
       icons: <FaInstagram />,
     },
     {
