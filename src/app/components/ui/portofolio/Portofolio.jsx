@@ -17,12 +17,12 @@ const Portofolio = ({ title, description, image,demo }) => {
           </Col> */}
         <div className="ms-2">
           <Card className="border" style={{ backgroundColor: "transparent" }}>
-            <Card.Img variant="top" src={image} />
+          <Card.Img variant="top" src={image} style={{ height: '180px' }} />
             <Card.Body>
-              <div className="d-flex gap-1 text-light mb-3">
+              <div className=" text-light mb-3">
                 <Card.Title className="text-black">{title}</Card.Title>
                 <span>-</span>
-                <Card.Text className="text-dark">{description}</Card.Text>
+                <Card.Text className="text-dark" style={{ height: '100px' }} >{description}</Card.Text>
               </div>
               <ButtonCustom className="btn-outline-dark" onClick={handleClick}>
                 <a href={demo} target="_blank" className="text-decoration-none text-black">Launch Site</a>                
