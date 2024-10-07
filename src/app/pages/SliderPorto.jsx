@@ -22,10 +22,10 @@ const SliderPorto = () => {
       demo: "https://skuy-phi.vercel.app/",
     },
     {
-      title: "Landing Pages",
+      title: "Landing Pages Movie Child",
       description: "Some description for the third item.",
       image: Projects,
-      demo: "buruh"
+      demo: "https://react-chill-movie.web.app/"
     },
     {
       title: "Landing Pages",
@@ -37,7 +37,7 @@ const SliderPorto = () => {
       title: "Landing Pages",
       description: "Some description for the fifth item.",
       image: Projects,
-      demo: "buruh"
+      demo: "Bi"
     },
     // Add more portfolio items as needed
   ];
