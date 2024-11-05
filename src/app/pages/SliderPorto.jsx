@@ -6,6 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Portofolio from '../components/ui/portofolio/Portofolio';
 import Projects from '../../assets/projects/projects.jpg';
 import Stay from '../../assets/projects/p1.png';
+import movie from "../../assets/projects/movie.png";
 
 const SliderPorto = () => {
   const portfolioItems = [
@@ -17,27 +18,28 @@ const SliderPorto = () => {
     },
     {
       title: "Skuy.com",
-      description: "staycation website with sticky navbar feature, responsive for all devices and testimonial dropdowns.",
+      description:
+        "staycation website with sticky navbar feature, responsive for all devices and testimonial dropdowns.",
       image: Stay,
       demo: "https://skuy-phi.vercel.app/",
     },
     {
       title: "Landing Pages Movie Child",
       description: "Some description for the third item.",
-      image: Projects,
-      demo: "https://react-chill-movie.web.app/"
+      image: movie,
+      demo: "react-chill-movie.web.app/",
     },
     {
       title: "Landing Pages",
       description: "Some description for the fourth item.",
       image: Projects,
-      demo: "buruh"
+      demo: "buruh",
     },
     {
       title: "Landing Pages",
       description: "Some description for the fifth item.",
       image: Projects,
-      demo: "Bi"
+      demo: "Bi",
     },
     // Add more portfolio items as needed
   ];
@@ -57,44 +59,51 @@ const SliderPorto = () => {
           slidesToShow: 1,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <Container>
-        <Row>
-            <Col>
-            <div>
-                <h3 className="text-dark text-center">Innovatice App Project</h3>
-                <h5 className="text-secondary text-center">Check Out Our Latest Creation!</h5>
-                </div>
-                </Col>
-        </Row>
+      <Row>
+        <Col>
+          <div>
+            <h3 className="text-dark text-center">Innovatice App Project</h3>
+            <h5 className="text-secondary text-center">
+              Check Out Our Latest Creation!
+            </h5>
+          </div>
+        </Col>
+      </Row>
       <Row>
         <Col>
           <div className="slider-container overflow-hidden">
             <Slider {...settings}>
               {portfolioItems.map((item, index) => (
                 <div key={index}>
-                  <Portofolio title={item.title} description={item.description} image={item.image} demo={item.demo} />
+                  <Portofolio
+                    title={item.title}
+                    description={item.description}
+                    image={item.image}
+                    demo={item.demo}
+                  />
                 </div>
               ))}
             </Slider>
@@ -103,6 +112,6 @@ const SliderPorto = () => {
       </Row>
     </Container>
   );
-}
+};
 
 export default SliderPorto;
