@@ -7,14 +7,16 @@ import Portofolio from '../components/ui/portofolio/Portofolio';
 import Projects from '../../assets/projects/projects.jpg';
 import Stay from '../../assets/projects/p1.png';
 import movie from "../../assets/projects/movie.png";
+import furniture from "../../assets/projects/myfurniture.png";
+import boga from "../../assets/projects/boga.png";
 
 const SliderPorto = () => {
   const portfolioItems = [
     {
-      title: "Landing Pages",
+      title: "Landing Page Company Profile",
       description: "Some description for the first item.",
-      image: Projects,
-      demo: "buruh",
+      image: boga,
+      demo: "https://boga.vercel.app/",
     },
     {
       title: "Skuy.com",
@@ -30,10 +32,10 @@ const SliderPorto = () => {
       demo: "react-chill-movie.web.app/",
     },
     {
-      title: "Landing Pages",
+      title: "Landing page E-Commerce Furniture",
       description: "Some description for the fourth item.",
-      image: Projects,
-      demo: "buruh",
+      image: furniture,
+      demo: "https://slicing-silk.vercel.app/",
     },
     {
       title: "Landing Pages",
