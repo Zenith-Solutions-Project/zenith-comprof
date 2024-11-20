@@ -26,7 +26,7 @@ const OurTeams = () => {
       linkedin: "linkedin.com/in/singgihseptian",
     },
     {
-      name: "Rizqi Ramadhani",
+      name: "Rizqi Ramadhanianto",
       role1: "Front End Developer",
       image: Teams3,
       github: "https://github.com/ramarizqiunstopable",
@@ -41,7 +41,7 @@ const OurTeams = () => {
     },
     {
       name: "Ana Marisa",
-      role1: "Backend Developer",
+      role1: "Back End Developer",
       image: Teams5,
       github: "https://github.com/AnaMarisa",
       linkedin: "https://www.linkedin.com/in/ana-m-039135131/",
