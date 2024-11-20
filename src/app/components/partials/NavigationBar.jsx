@@ -16,7 +16,7 @@ function NavigationBar() {
   ];
 
   const handleWhatsAppClick = () => {
-    const waNumber = "082298238070";
+    const waNumber = "+6282298238070";
     const message = "Hello, I want to know more about your services!";
     const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
     window.open(waLink, "_blank");
