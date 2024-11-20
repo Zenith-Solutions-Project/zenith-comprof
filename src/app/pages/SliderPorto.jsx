@@ -14,7 +14,7 @@ const SliderPorto = () => {
   const portfolioItems = [
     {
       title: "Landing Page Company Profile",
-      description: "Some description for the first item.",
+      description: "Korean food distributor company  .",
       image: boga,
       demo: "https://boga.vercel.app/",
     },
