@@ -3,46 +3,69 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Portofolio from "../components/ui/portofolio/Portofolio";
-import Projects from "../../assets/projects/projects.jpg";
 import Stay from "../../assets/projects/p1.png";
 import movie from "../../assets/projects/movie.png";
 import furniture from "../../assets/projects/myfurniture.png";
 import boga from "../../assets/projects/boga.png";
+import ssayomart from "../../assets/projects/ssayomart.png";
+import jsf from "../../assets/projects/jsf.png";
+import sipdesa from "../../assets/projects/sipdesa.png";
+import cashier from "../../assets/projects/cashier.png";
 
 const SliderPorto = () => {
   const portfolioItems = [
     {
-      title: "Landing Page Company Profile",
-      description: "Korean food distributor company  .",
+      title: "Supply Chain Management App",
+      description:
+        "An supply chain management app using Laravel, ReactJS, and Tailwind CSS, InertiaJS, MySQL and several libraries like Spatie and Breeze for login, role, permission, and history logs features.",
+      image: jsf,
+      demo: "https://jsf-supplychain.cloud/",
+    },
+    {
+      title: "Ssayomart E-Commerce",
+      description:
+        "Ssayomart is a web-based e-commerce application built with CodeIgniter 4 framework. The app integrates GoSend API for delivery, Midtrans API for secure payments",
+      image: ssayomart,
+      demo: "https://ssayomart.com/",
+    },
+    {
+      title: "Sistem Integrasi Pelayanan Desa",
+      description:
+        "The village service system application or we also call it SIPDESA is a web-based application using the Code Igniter 4 framework, jQuery and MySQL for the database.",
+      image: sipdesa,
+      demo: "https://drive.google.com/file/d/1sNmpmpW1pcSkqMDV_yBiKQuP-pq27J7h/view?usp=drive_link",
+    },
+    {
+      title: "Boga Eterna Sentosa Company Profile",
+      description: "Company Profile website for PT Boga Eterna Sentosa.",
       image: boga,
       demo: "https://boga.vercel.app/",
     },
     {
       title: "Skuy.com",
       description:
-        "staycation website with sticky navbar feature, responsive for all devices and testimonial dropdowns.",
+        "Staycation website with sticky navbar feature, responsive for all devices and testimonial dropdowns.",
       image: Stay,
       demo: "https://skuy-phi.vercel.app/",
     },
     {
-      title: "Landing Pages Movie Child",
-      description: "Some description for the third item.",
+      title: "Movie Chill App",
+      description: "Integrate Netflix API with ReactJS",
       image: movie,
       demo: "react-chill-movie.web.app/",
     },
     {
-      title: "Landing page E-Commerce Furniture",
-      description: "Some description for the fourth item.",
+      title: "E-Commerce Furniture",
+      description: "An website concept for furniture.",
       image: furniture,
       demo: "https://slicing-silk.vercel.app/",
     },
     {
-      title: "Landing Pages",
-      description: "Some description for the fifth item.",
-      image: Projects,
-      demo: "Bi",
+      title: "Company Profile for named Cashier",
+      description: "An cashier app using HTML, CSS, and Javascript.",
+      image: cashier,
+      demo: "https://gilang-aditia.github.io/Slicing-Bootrape/",
     },
-    // Add more portfolio items as needed
   ];
 
   var settings = {

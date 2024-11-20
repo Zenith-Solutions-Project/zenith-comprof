@@ -6,34 +6,35 @@ import Teams3 from "../../../../assets/teams/rizqi.jpg";
 import Teams2 from "../../../../assets/teams/dib.jpeg";
 import Teams4 from "../../../../assets/teams/singgih.jpeg";
 import Teams5 from "../../../../assets/teams/ana.jpeg";
+import Teams6 from "../../../../assets/teams/mandela.jpeg";
 
 import "./teams.css";
 const OurTeams = () => {
   const teams = [
     {
       name: "Gilang Aditia",
-      role1: "UI/UX | Frontend Developer",
+      role1: "UI/UX | Front End Developer",
       image: Teams1,
       github: " https://github.com/gilang-aditia",
       linkedin: "https://www.linkedin.com/in/gilang-aditia-b79461231/",
     },
     {
       name: "Singgih Septian",
-      role1: "Frontend Developer",
+      role1: "Front End Developer",
       image: Teams4,
       github: "https://github.com/singgihseptiann",
       linkedin: "linkedin.com/in/singgihseptian",
     },
     {
       name: "Rizqi Ramadhani",
-      role1: "Frontend Developer",
+      role1: "Front End Developer",
       image: Teams3,
       github: "https://github.com/ramarizqiunstopable",
       linkedin: "https://www.linkedin.com/in/rizqi-ramadhanianto-b09558a8/",
     },
     {
       name: "Adib Alfaini Afifi",
-      role1: "Backend Developer",
+      role1: "Back End Developer",
       image: Teams2,
       github: " https://github.com/alfalest",
       linkedin: "https://linkedin.com/in/adibalfaini",
@@ -44,6 +45,13 @@ const OurTeams = () => {
       image: Teams5,
       github: "https://github.com/AnaMarisa",
       linkedin: "https://www.linkedin.com/in/ana-m-039135131/",
+    },
+    {
+      name: "Denna Mandela Putra",
+      role1: "DevOps Engineer",
+      image: Teams6,
+      github: "https://github.com/dennamandela",
+      linkedin: "https://www.linkedin.com/in/dennamandela/",
     },
   ];
 
@@ -65,7 +73,8 @@ const OurTeams = () => {
             {teams.map((teamMember, index) => (
               <div
                 key={index}
-                className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                className="col-12 col-md-6 col-lg-4 d-flex justify-content-center"
+              >
                 <Card className="border-0 align-items-center">
                   <Image
                     src={teamMember.image}
@@ -84,7 +93,8 @@ const OurTeams = () => {
                       <a
                         href={teamMember.github}
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                      >
                         <FaGithubSquare
                           className="rounded-5"
                           size={30}
@@ -94,7 +104,8 @@ const OurTeams = () => {
                       <a
                         href={teamMember.linkedin}
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                      >
                         <FaLinkedin
                           className="rounded-5"
                           size={30}
