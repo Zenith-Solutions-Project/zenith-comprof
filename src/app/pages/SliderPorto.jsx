@@ -1,11 +1,10 @@
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Container, Row, Col } from 'react-bootstrap';
-import Portofolio from '../components/ui/portofolio/Portofolio';
-import Projects from '../../assets/projects/projects.jpg';
-import Stay from '../../assets/projects/p1.png';
+import { Container, Row, Col } from "react-bootstrap";
+import Portofolio from "../components/ui/portofolio/Portofolio";
+import Projects from "../../assets/projects/projects.jpg";
+import Stay from "../../assets/projects/p1.png";
 import movie from "../../assets/projects/movie.png";
 import furniture from "../../assets/projects/myfurniture.png";
 import boga from "../../assets/projects/boga.png";
