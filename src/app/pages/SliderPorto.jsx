@@ -14,13 +14,7 @@ import cashier from "../../assets/projects/cashier.png";
 
 const SliderPorto = () => {
   const portfolioItems = [
-    {
-      title: "Supply Chain Management App",
-      description:
-        "An supply chain management app using Laravel, ReactJS, and Tailwind CSS, InertiaJS, MySQL and several libraries like Spatie and Breeze for login, role, permission, and history logs features.",
-      image: jsf,
-      demo: "https://jsf-supplychain.cloud/",
-    },
+
     {
       title: "Ssayomart E-Commerce",
       description:
