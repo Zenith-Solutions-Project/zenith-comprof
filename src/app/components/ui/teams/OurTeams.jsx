@@ -58,7 +58,7 @@ const OurTeams = () => {
       name: "Rindia Aulia Rahma",
       role1: "Content Planner | Digital Marketer",
       image: Teams7,
-      github: "https://github.com/dennamandela",
+      github: "#",
       linkedin: "https://www.linkedin.com/in/rindiaaulia/",
     },
   ];
