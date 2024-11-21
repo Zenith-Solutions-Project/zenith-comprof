@@ -7,6 +7,7 @@ import Teams2 from "../../../../assets/teams/dib.jpeg";
 import Teams4 from "../../../../assets/teams/singgih.jpeg";
 import Teams5 from "../../../../assets/teams/ana.jpeg";
 import Teams6 from "../../../../assets/teams/mandela.jpeg";
+import Teams7 from "../../../../assets/teams/rindia.jpeg";
 
 import "./teams.css";
 const OurTeams = () => {
@@ -52,6 +53,13 @@ const OurTeams = () => {
       image: Teams6,
       github: "https://github.com/dennamandela",
       linkedin: "https://www.linkedin.com/in/dennamandela/",
+    },
+    {
+      name: "Rindia Aulia Rahma",
+      role1: "Content Planner | Digital Marketer",
+      image: Teams7,
+      github: "https://github.com/dennamandela",
+      linkedin: "https://www.linkedin.com/in/rindiaaulia/",
     },
   ];
 
